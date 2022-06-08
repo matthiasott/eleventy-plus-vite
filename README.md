@@ -5,7 +5,7 @@ A clean and fast Eleventy Starter Kit with Vite.
 [![Netlify Status](https://api.netlify.com/api/v1/badges/ef99b4ea-199f-497b-84c1-48c34355da8a/deploy-status)](https://app.netlify.com/sites/eleventyplusvite/deploys)
 ## Features
 
-* Eleventy 2.0
+* Eleventy 2.0.0-canary
 * New Eleventy 2.0 Dev Server with live reload
 * Vite as Middleware in Eleventy Dev Server (uses [eleventy-plugin-vite](https://github.com/11ty/eleventy-plugin-vite/))
 * Eleventy build output is post-processed by [Vite](https://vitejs.dev) (with Rollup)
