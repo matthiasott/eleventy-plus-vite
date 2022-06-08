@@ -1,0 +1,30 @@
+.skiplink {
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    width: 1px;
+}
+
+.skiplink:focus {
+  border-radius: 4px;
+  clip: auto;
+  color: var(--textColor);
+  height: auto;
+  padding: 0.5em 1em;
+  margin: 0.5em;
+  width: auto;
+  z-index: 1;
+  text-decoration: none;
+}
+
+:focus,
+:active {
+  border: none;
+  outline: none;
+}
+
+.focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--focusColor);
+}

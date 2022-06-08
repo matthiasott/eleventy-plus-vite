@@ -1,0 +1,11 @@
+.postlist {
+    
+    ol[class] {
+        list-style-type: none;
+        padding: 0;
+    }
+}
+
+.postlist-item:has(a + time) h2 {
+    margin-bottom: 1rem;
+}

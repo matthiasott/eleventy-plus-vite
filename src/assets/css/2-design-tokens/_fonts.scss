@@ -1,0 +1,57 @@
+/**
+ * Font Face
+ */
+ @font-face {
+    font-family: 'DM Sans Subset';
+    src: url('/assets/fonts/dm-sans/dm-sans-v11-latin-regular-subset.woff2') format('woff2'),
+             url('/assets/fonts/dm-sans/dm-sans-v11-latin-regular-subset.woff') format('woff');
+    unicode-range: U+21-80,U+91-94,U+BF-D6,U+D8-F6,U+F8-122; // U+21-80,U+91-94,U+DF,U+E4,U+F6,U+FC
+}
+
+
+/* dm-sans-regular - latin */
+@font-face {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('/assets/fonts/dm-sans/dm-sans-v11-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('/assets/fonts/dm-sans/dm-sans-v11-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* dm-sans-italic - latin */
+  @font-face {
+    font-family: 'DM Sans';
+    font-style: italic;
+    font-weight: 400;
+    src: local(''),
+         url('/assets/fonts/dm-sans/dm-sans-v11-latin-italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('/assets/fonts/dm-sans/dm-sans-v11-latin-italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* dm-sans-700italic - latin */
+  @font-face {
+    font-family: 'DM Sans';
+    font-style: italic;
+    font-weight: 700;
+    src: local(''),
+         url('/assets/fonts/dm-sans/dm-sans-v11-latin-bolditalic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('/assets/fonts/dm-sans/dm-sans-v11-latin-bolditalic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* dm-sans-700 - latin */
+  @font-face {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+         url('/assets/fonts/dm-sans/dm-sans-v11-latin-bold.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('/assets/fonts/dm-sans/dm-sans-v11-latin-bold.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+body {
+    font-family: sans-serif;
+}
+.fonts-loaded-1 body {
+    font-family: 'DM Sans Subset';
+}
+.fonts-loaded-2 body {
+    font-family: 'DM Sans';
+}

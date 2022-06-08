@@ -1,0 +1,12 @@
+a {
+    color: var(--primaryColor);
+    text-decoration: underline;
+
+    &:hover {
+        // 
+    }
+    svg {
+        display: inline-block;
+        fill: currentColor;
+    }
+}

@@ -1,0 +1,24 @@
+/* The aspect ratio hack – https://matthiasott.com/notes/aspect-ratio-in-css */
+.aspect-ratio-hack--16-9 {
+  position: relative;
+}
+
+.aspect-ratio-hack--16-9:before {
+  display: block;
+  content: "";
+  width: 100%;
+  padding-top: calc((9 / 16) * 100%);
+}
+
+.aspect-ratio-hack--16-9 > * {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/* Native aspect ratio (only Chrome Canary behind the Experimental Web Platform Features flag) */
+.aspect-ratio--16-9 {
+  aspect-ratio: 16 / 9;
+}

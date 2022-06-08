@@ -1,0 +1,44 @@
+{
+  "name": "Eleventy Plus Vite",
+  "version": "0.1.0",
+  "description": "A clean and simple Eleventy 2 Starter Kit with Vite",
+  "browserslist": [
+    "> 0.5%",
+    "not IE 11"
+  ],
+  "scripts": {
+    "start": "npx @11ty/eleventy --serve",
+    "build": "npx @11ty/eleventy",
+    "dev": "run-s clean eleventy:dev --print-label",
+    "clean": "del-cli dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://matthiasott@github.com/matthiasott/11ty22.git"
+  },
+  "author": "Matthias Ott",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/matthiasott/11ty22/issues"
+  },
+  "homepage": "https://github.com/matthiasott/11ty22#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.0-canary.11",
+    "@11ty/eleventy-img": "^2.0.1",
+    "@11ty/eleventy-navigation": "^0.3.3",
+    "@11ty/eleventy-plugin-rss": "^1.1.2",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^4.0.0",
+    "@11ty/eleventy-plugin-vite": "^1.0.0-canary.1",
+    "autoprefixer": "^10.4.7",
+    "cssnano": "^5.1.11",
+    "cssremedy": "^0.1.0-beta.2",
+    "focus-visible": "^5.2.0",
+    "luxon": "^2.4.0",
+    "markdown-it": "^13.0.1",
+    "markdown-it-anchor": "^8.6.4",
+    "postcss-nesting": "^10.1.8",
+    "sass": "^1.52.2",
+    "vite": "^2.9.9"
+  }
+}

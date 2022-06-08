@@ -1,0 +1,10 @@
+p {
+    font-size: var(--fluid-0);
+    line-height: 1.5;
+}
+
+span.marker {
+    box-shadow: inset 0 -14px 0 0 rgb(255, 236, 158);
+    line-height: 0.6;
+    display: inline-block;
+}
