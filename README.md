@@ -1,4 +1,4 @@
-# Eleventy Plus Vite
+# Eleventy Plus Vite.  Rien n’est plus vite. <br>🏃💨
 
 A clean and fast Eleventy Starter Project with Vite.
 
