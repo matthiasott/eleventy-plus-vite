@@ -5,7 +5,7 @@
     --backgroundColor: #ffffff;
 }
 
-// // Very basic support for a dark color scheme
+// Very basic support for a dark color scheme
 @media (prefers-color-scheme: dark) {
     :root {
         --color-mode: 'dark';
@@ -14,6 +14,6 @@
     :root:not([data-user-color-scheme]) {
         --backgroundColor: #1A1A1A;
         --textColor: #eeeeee;
-        --primaryColor: #8551ff;
+        --primaryColor: #A15CFF;
     }
 }
