@@ -4,15 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ meta.title }}</title>
-
-	<link rel="preload" as="style" href="/assets/css/main.scss">
-	<link rel="preload" as="script" href="/assets/js/main.js">
-
-    <link rel="stylesheet" href="/assets/css/main.scss">
+    
     {% include "meta.njk" %}
 
-    <!-- Font loading: Critical FOFT with preload, see: https://www.zachleat.com/web/comprehensive-webfonts/#critical-foft-with-preload -->
     <script>
+	/* Font loading: Critical FOFT with preload, see: https://www.zachleat.com/web/comprehensive-webfonts/#critical-foft-with-preload */
 	(function() {
 		if( "fonts" in document ) {
 			// Optimization for Repeat Views
@@ -39,6 +35,7 @@
 		}
 	})();
 	</script>
+	<link rel="stylesheet" href="/assets/css/main.scss">
 </head>
 <body>
     <a href="#main" class="skiplink">Skip to main content</a>
@@ -51,11 +48,6 @@
         {% include "footer.njk" %}
     </div>
 
-    <script type="module" defer src="{{ '/assets/js/main.js' | url }}"></script>
-    <!--<script type="text/javascript">
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('/serviceworker.js')
-        }
-    </script>-->
+    <script type="module" src="{{ '/assets/js/main.js' | url }}"></script>
 </body>
 </html>
