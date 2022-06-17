@@ -1,3 +1,8 @@
+ul, ol {
+  font-size: var(--fluid-0);
+  line-height: 1.5;
+}
+
 ul[class],
 ol[class] {
   list-style: none;
