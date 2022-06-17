@@ -16,7 +16,7 @@ A clean and fast Eleventy Starter Project with Vite.
 * Basic fluid typography based on [Utopia](https://utopia.fyi)
 * Basic dark mode support (using `prefers-color-scheme` and CSS Custom Properties)
 * Polyfill for [focus-visible](https://matthiasott.com/notes/focus-visible-is-here)
-* RSS feed
+* RSS feed 🧡
 * XML sitemap
 * Four Hundos Lighthouse score 💯💯💯💯
 
