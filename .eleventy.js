@@ -31,7 +31,6 @@ module.exports = function (eleventyConfig) {
 				middlewareMode: 'ssr'
 			},
 			assetsInclude: ['**/*.xml', '**/*.txt'],
-			plugins: [],
 			build: {
 				mode: 'production',
 				sourcemap: 'true',
@@ -43,13 +42,13 @@ module.exports = function (eleventyConfig) {
 						chunkFileNames: 'assets/js/[name].[hash].js',
 						entryFileNames: 'assets/js/[name].[hash].js'
 					},
-					plugins: [
-						rollupPluginCritical({
-							criticalUrl: 'https://eleventyplusvite.netlify.app/',
+					plugins: [rollupPluginCritical({
+							criticalUrl: './_site/',
 							criticalBase: './_site/',
 							criticalPages: [
-								{ uri: '', template: 'index' },
-								{ uri: 'posts', template: 'posts/index' },
+								{ uri: 'index.html', template: 'index' },
+								{ uri: 'posts/index.html', template: 'posts/index' },
+								{ uri: '404.html', template: '404' },
 							],
 							criticalConfig: {
 								inline: true,
@@ -65,10 +64,10 @@ module.exports = function (eleventyConfig) {
 									{
 										height: 1080,
 										width: 1920,
-									  },
-								  ]
-							},
-						}),
+									}
+								]
+							}
+						})
 					]
 				}
 			}
