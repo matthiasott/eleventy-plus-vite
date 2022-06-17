@@ -65,7 +65,10 @@ module.exports = function (eleventyConfig) {
 										height: 1080,
 										width: 1920,
 									}
-								]
+								],
+								penthouse: {
+									forceInclude: ['.fonts-loaded-1 body', '.fonts-loaded-2 body'],
+								  }
 							}
 						})
 					]
