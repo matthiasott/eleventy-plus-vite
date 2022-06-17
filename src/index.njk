@@ -6,6 +6,7 @@ eleventyNavigation:
 ---
 
 <div class="container">
+  
     <h1>Eleventy Plus Vite. Rien n’est plus vite. <br>🏃💨</h1>
     <p>A simple, fast – and a little bit opinionated – starter project for <a href="https://www.11ty.dev">Eleventy</a>.</p>
     <p>By <a href="https://matthiasott.com">Matthias Ott</a>.</p>
@@ -14,21 +15,23 @@ eleventyNavigation:
             </svg> Github
           </a>
       </p>
-    <h2>Features</h2>
-    <ul dir="auto">
-      <li>Eleventy 2.0.0-canary</li>
-      <li>New Eleventy 2.0 Dev Server with live reload</li>
-      <li>Vite as Middleware in Eleventy Dev Server (uses <a href="https://github.com/11ty/eleventy-plugin-vite/">eleventy-plugin-vite</a>)</li>
-      <li>Eleventy build output is post-processed by <a href="https://vitejs.dev" rel="nofollow">Vite</a> (with Rollup)</li>
-      <li>CSS/Sass post-processing with PostCSS incl. <a href="https://github.com/postcss/autoprefixer">Autoprefixer</a> and cssnano</li>
-      <li>Uses <a href="https://matthiasott.com/notes/how-i-structure-my-css" rel="nofollow">my own opinionated CSS/Sass structure</a></li>
-      <li>Critical CSS, generated and inlined via <a href="https://github.com/nystudio107/rollup-plugin-critical">rollup-plugin-critical</a>. The main CSS file is then loaded asynchronously with <a href="https://www.filamentgroup.com/lab/load-css-simpler/" rel="nofollow">Scott Jehl’s <code>media</code> loading strategy</a> (adds <code>media="print"</code> and swaps to <code>media="all"</code> once loaded)</li>
-      <li>Example implementation of a web font loading strategy (<a href="https://www.zachleat.com/web/comprehensive-webfonts/#critical-foft-preload" rel="nofollow">critical FOFT with preload</a>)</li>
-      <li>Basic fluid typography based on <a href="https://utopia.fyi" rel="nofollow">Utopia</a></li>
-      <li>Basic dark mode support (using <code>prefers-color-scheme</code> and CSS Custom Properties)</li>
-      <li>Polyfill for <a href="https://matthiasott.com/notes/focus-visible-is-here" rel="nofollow">focus-visible</a></li>
-      <li>RSS feed 🧡</li>
-      <li>XML sitemap</li>
-      <li>Four Hundos Lighthouse score 💯💯💯💯</li>
-    </ul>
+    <section class="list">
+      <h2>Features</h2>
+        <ul dir="auto">
+          <li>Eleventy 2.0.0-canary</li>
+          <li>New Eleventy 2.0 Dev Server with live reload</li>
+          <li>Vite as Middleware in Eleventy Dev Server (uses <a href="https://github.com/11ty/eleventy-plugin-vite/">eleventy-plugin-vite</a>)</li>
+          <li>Eleventy build output is post-processed by <a href="https://vitejs.dev" rel="nofollow">Vite</a> (with Rollup)</li>
+          <li>CSS/Sass post-processing with PostCSS incl. <a href="https://github.com/postcss/autoprefixer">Autoprefixer</a> and cssnano</li>
+          <li>Uses <a href="https://matthiasott.com/notes/how-i-structure-my-css" rel="nofollow">my own opinionated CSS/Sass structure</a></li>
+          <li>Critical CSS, generated and inlined via <a href="https://github.com/nystudio107/rollup-plugin-critical">rollup-plugin-critical</a>. The main CSS file is then loaded asynchronously with <a href="https://www.filamentgroup.com/lab/load-css-simpler/" rel="nofollow">Scott Jehl’s <code>media</code> loading strategy</a> (adds <code>media="print"</code> and swaps to <code>media="all"</code> once loaded)</li>
+          <li>Example implementation of a web font loading strategy (<a href="https://www.zachleat.com/web/comprehensive-webfonts/#critical-foft-preload" rel="nofollow">critical FOFT with preload</a>)</li>
+          <li>Basic fluid typography based on <a href="https://utopia.fyi" rel="nofollow">Utopia</a></li>
+          <li>Basic dark mode support (using <code>prefers-color-scheme</code> and CSS Custom Properties)</li>
+          <li>Polyfill for <a href="https://matthiasott.com/notes/focus-visible-is-here" rel="nofollow">focus-visible</a></li>
+          <li>RSS feed 🧡</li>
+          <li>XML sitemap</li>
+          <li>Four Hundos Lighthouse score 💯💯💯💯</li>
+        </ul>
+    </section>
 </div>
