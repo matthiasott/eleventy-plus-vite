@@ -10,19 +10,6 @@ body {
     min-height: 100%;
     min-height: 100vh;
     position: relative;
-
-    .main {
-        display: flex;
-        flex-direction: column;
-        flex: 1 0 auto;
-
-        &::after {
-            content: '';
-            display: block;
-            height: 0px;
-            visibility: hidden;
-        }
-    }
 }
 
 .container {
