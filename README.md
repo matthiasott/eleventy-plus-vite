@@ -15,14 +15,14 @@ A clean and fast Eleventy Starter Project with Vite.
 * Example implementation of a web font loading strategy ([critical FOFT with preload](https://www.zachleat.com/web/comprehensive-webfonts/#critical-foft-preload))
 * Basic fluid typography based on [Utopia](https://utopia.fyi)
 * Basic dark mode support (using `prefers-color-scheme` and CSS Custom Properties)
-* focus-visible polyfill
+* Polyfill for [focus-visible](https://matthiasott.com/notes/focus-visible-is-here)
 * RSS feed
 * XML sitemap
 * Four Hundos Lighthouse score 💯💯💯💯
 
 ## Getting started
 
-First, [generate a new repository based on this project](https://github.com/matthiasott/eleventy-plus-vite/generate).
+Start by [generating a new repository based on this project](https://github.com/matthiasott/eleventy-plus-vite/generate).
 
 After cloning (or downloading) the repository to your local machine, install all dependencies with the command
 
