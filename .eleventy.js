@@ -6,6 +6,8 @@ const EleventyPluginRss = require('@11ty/eleventy-plugin-rss')
 const EleventyPluginSyntaxhighlight = require('@11ty/eleventy-plugin-syntaxhighlight')
 const EleventyVitePlugin = require('@11ty/eleventy-plugin-vite')
 
+const rollupPluginCritical = require('rollup-plugin-critical').default
+
 const filters = require('./utils/filters.js')
 const transforms = require('./utils/transforms.js')
 const shortcodes = require('./utils/shortcodes.js')
@@ -29,6 +31,7 @@ module.exports = function (eleventyConfig) {
 				middlewareMode: 'ssr'
 			},
 			assetsInclude: ['**/*.xml', '**/*.txt'],
+			plugins: [],
 			build: {
 				mode: 'production',
 				sourcemap: 'true',
@@ -37,9 +40,22 @@ module.exports = function (eleventyConfig) {
 				rollupOptions: {
 					output: {
 						assetFileNames: 'assets/css/main.[hash].css',
-						chunkFileNames: 'assets/js/main.[hash].js',
+						chunkFileNames: 'assets/js/[name].[hash].js',
 						entryFileNames: 'assets/js/[name].[hash].js'
-					}
+					},
+					plugins: [
+						rollupPluginCritical({
+							criticalUrl: 'https://eleventyplusvite.netlify.app/',
+							criticalBase: './_site/',
+							criticalPages: [
+								{ uri: '', template: 'index' },
+								{ uri: 'posts', template: 'posts/index' },
+							],
+							criticalConfig: {
+								inline: true,
+							},
+						}),
+					]
 				}
 			}
 		}
