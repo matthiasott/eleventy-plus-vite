@@ -77,6 +77,8 @@ module.exports = function (eleventyConfig) {
 		}
 	})
 
+	eleventyConfig.setServerPassthroughCopyBehavior("copy");
+
 	// Filters
 	Object.keys(filters).forEach((filterName) => {
 		eleventyConfig.addFilter(filterName, filters[filterName])
