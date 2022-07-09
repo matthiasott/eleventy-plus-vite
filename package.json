@@ -1,6 +1,6 @@
 {
   "name": "Eleventy Plus Vite",
-  "version": "0.2.0",
+  "version": "0.2.2",
   "description": "A clean and simple Eleventy 2 Starter Kit with Vite",
   "browserslist": [
     "> 0.5%",
@@ -34,6 +34,11 @@
     "autoprefixer": "^10.4.7",
     "cssnano": "^5.1.11",
     "cssremedy": "^0.1.0-beta.2",
+    "eslint": "^8.18.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.2.3",
+    "eslint-plugin-promise": "^6.0.0",
     "focus-visible": "^5.2.0",
     "luxon": "^2.4.0",
     "markdown-it": "^13.0.1",
