@@ -1,5 +1,5 @@
 {
-  "name": "Eleventy Plus Vite",
+  "name": "eleventy-plus-vite",
   "version": "0.2.2",
   "description": "A clean and simple Eleventy 2 Starter Kit with Vite",
   "browserslist": [
@@ -8,9 +8,11 @@
   ],
   "scripts": {
     "start": "npx @11ty/eleventy --serve",
+    "watch": "npx @11ty/eleventy --watch",
+    "serve": "npx @11ty/eleventy --serve",
+    "bench": "DEBUG=Eleventy:Benchmark* npx @11ty/eleventy",
     "build": "npx @11ty/eleventy",
-    "dev": "run-s clean eleventy:dev --print-label",
-    "clean": "del-cli dist",
+    "clean": "del-cli _site",
     "test": "echo \"Error: no test specified\" && exit 1",
     "postinstall": "patch-package"
   },
@@ -34,6 +36,7 @@
     "autoprefixer": "^10.4.7",
     "cssnano": "^5.1.11",
     "cssremedy": "^0.1.0-beta.2",
+    "del-cli": "^4.0.1",
     "eslint": "^8.18.0",
     "eslint-config-standard": "^17.0.0",
     "eslint-plugin-import": "^2.26.0",
@@ -43,6 +46,7 @@
     "luxon": "^2.4.0",
     "markdown-it": "^13.0.1",
     "markdown-it-anchor": "^8.6.4",
+    "npm-run-all": "^4.1.5",
     "patch-package": "^6.4.7",
     "postcss-nesting": "^10.1.8",
     "rollup-plugin-critical": "^1.0.8",
