@@ -119,8 +119,6 @@ module.exports = function (eleventyConfig) {
 	// Copy/pass-through files
 	eleventyConfig.addPassthroughCopy('src/assets/css')
 	eleventyConfig.addPassthroughCopy('src/assets/js')
-	// Pass-through of the public directory for static files that Vite/Rollup ignores on build (https://vitejs.dev/guide/assets.html#the-public-directory)
-	eleventyConfig.addPassthroughCopy('src/public')
 
 	return {
 		templateFormats: ['md', 'njk', 'html', 'liquid'],
