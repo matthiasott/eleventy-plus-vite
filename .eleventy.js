@@ -28,8 +28,9 @@ module.exports = function (eleventyConfig) {
 			clearScreen: false,
 			server: {
 				mode: 'development',
-				middlewareMode: 'ssr'
+				middlewareMode: true,
 			},
+			appType: 'custom',
 			assetsInclude: ['**/*.xml', '**/*.txt'],
 			build: {
 				mode: 'production',
@@ -76,8 +77,6 @@ module.exports = function (eleventyConfig) {
 			}
 		}
 	})
-
-	eleventyConfig.setServerPassthroughCopyBehavior("copy");
 
 	// Filters
 	Object.keys(filters).forEach((filterName) => {
