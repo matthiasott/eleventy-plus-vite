@@ -15,6 +15,8 @@ const shortcodes = require('./utils/shortcodes.js')
 const { resolve } = require('path')
 
 module.exports = function (eleventyConfig) {
+	eleventyConfig.setServerPassthroughCopyBehavior('copy');
+
 	// Plugins
 	eleventyConfig.addPlugin(EleventyPluginNavigation)
 	eleventyConfig.addPlugin(EleventyPluginRss)
