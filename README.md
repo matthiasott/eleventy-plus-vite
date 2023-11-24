@@ -5,8 +5,9 @@ A clean and fast Eleventy Starter Project with Vite.
 [![Netlify Status](https://api.netlify.com/api/v1/badges/ef99b4ea-199f-497b-84c1-48c34355da8a/deploy-status)](https://app.netlify.com/sites/eleventyplusvite/deploys)
 ## Features
 
-* Eleventy 2.0.0-canary
+* Eleventy 2.0.1
 * New Eleventy 2.0 Dev Server with live reload
+* Vite 4.5.0
 * Vite as Middleware in Eleventy Dev Server (uses [eleventy-plugin-vite](https://github.com/11ty/eleventy-plugin-vite/))
 * Eleventy build output is post-processed by [Vite](https://vitejs.dev) (with Rollup)
 * CSS/Sass post-processing with PostCSS incl. [Autoprefixer](https://github.com/postcss/autoprefixer) and cssnano
