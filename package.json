@@ -32,7 +32,7 @@
     "@11ty/eleventy-navigation": "^0.3.5",
     "@11ty/eleventy-plugin-rss": "^2.0.2",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
-    "@11ty/eleventy-plugin-vite": "^5.0.0-alpha.1",
+    "@11ty/eleventy-plugin-vite": "^5.0.0-alpha.5",
     "autoprefixer": "^10.4.20",
     "cssnano": "^7.0.5",
     "cssremedy": "^0.1.0-beta.2",
