@@ -36,10 +36,10 @@ export default function (eleventyConfig) {
 			assetsInclude: ['**/*.xml', '**/*.txt'],
 			build: {
 				mode: 'production',
-				sourcemap: 'true',
+				sourcemap: true,
 				manifest: true,
 				// This puts CSS and JS in subfolders – remove if you want all of it to be in /assets instead
-				rollupOptions: {
+				rolldownOptions: {
 					output: {
 						assetFileNames: 'assets/css/main.[hash].css',
 						chunkFileNames: 'assets/js/[name].[hash].js',

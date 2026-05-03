@@ -7,7 +7,7 @@ A clean and fast Eleventy Starter Project with Vite.
 
 * Eleventy v3
 * Eleventy Dev Server with live reload
-* Vite v5
+* Vite v8
 * Vite as Middleware in Eleventy Dev Server (uses [eleventy-plugin-vite](https://github.com/11ty/eleventy-plugin-vite/))
 * Eleventy build output is post-processed by [Vite](https://vitejs.dev) (with Rollup)
 * CSS/Sass post-processing with PostCSS incl. [Autoprefixer](https://github.com/postcss/autoprefixer) and cssnano
