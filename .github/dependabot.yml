@@ -1,0 +1,44 @@
+# Dependabot configuration
+# https://docs.github.com/en/code-security/dependabot/dependabot-version-updates
+
+version: 2
+
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "08:00"
+      timezone: "Europe/Berlin"
+    open-pull-requests-limit: 5
+    groups:
+      # Eleventy core + plugins: keep the ecosystem on a single coherent version
+      eleventy:
+        patterns:
+          - "@11ty/*"
+      # Vite and its plugin are coupled — bump together
+      vite:
+        patterns:
+          - "vite"
+          - "@11ty/eleventy-plugin-vite"
+    ignore:
+      # ESLint stack is intentionally pinned; flat-config migration is a
+      # separate, manual effort. See SECURITY.md / repo notes.
+      - dependency-name: "eslint"
+        update-types: ["version-update:semver-major"]
+      - dependency-name: "eslint-config-standard"
+        update-types: ["version-update:semver-major", "version-update:semver-minor"]
+      - dependency-name: "eslint-plugin-n"
+        update-types: ["version-update:semver-major"]
+      - dependency-name: "eslint-plugin-promise"
+        update-types: ["version-update:semver-major"]
+      # cssnano 8 has a Node engine jump and PostCSS peer-dep change
+      - dependency-name: "cssnano"
+        update-types: ["version-update:semver-major"]
+    commit-message:
+      prefix: "deps"
+      include: "scope"
+    labels:
+      - "dependencies"
+    target-branch: "main"
